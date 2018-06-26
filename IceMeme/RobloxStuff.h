@@ -96,21 +96,21 @@ DWORD unprotect(DWORD addr)
 }
 
 namespace Rlua {
-	typedef void(__cdecl *Lua_getfield)(RluaState lst, int index, const char *k);
+	typedef void(__stdcall *Lua_getfield)(RluaState lst, int index, const char *k);
 	Lua_getfield rlua_getfield = (Lua_getfield)unprotect(getfieldaddress);
-	typedef void(__cdecl *Lua_settop)(RluaState lst, int index);
+	typedef void(__fastcall *Lua_settop)(RluaState lst, int index);
 	Lua_settop rlua_settop = (Lua_settop)unprotect(settopaddress);
-	typedef void(__stdcall *Lua_pushstring)(RluaState lst, const char *s);
+	typedef void(__fastcall *Lua_pushstring)(RluaState lst, const char *s);
 	Lua_pushstring rlua_pushstring = (Lua_pushstring)pushstringaddress;
-	typedef void(__cdecl *Lua_pushvalue)(RluaState lst, int index);
+	typedef void(__fastcall *Lua_pushvalue)(RluaState lst, int index);
 	Lua_pushvalue rlua_pushvalue = (Lua_pushvalue)unprotect(pushvalueaddress);
 	typedef int(__cdecl *Lua_call)(RluaState lst, int nargs, int nresults);
 	Lua_call rlua_call = (Lua_call)unprotect(calladdress);
 	typedef void(__fastcall *Lua_setfield)(RluaState lst, int index, const char *k);
 	Lua_setfield rlua_setfield2 = (Lua_setfield)unprotect(setfieldaddress);
-	typedef void(__stdcall *Lua_pushnumber)(RluaState lst, double n);
+	typedef void(__thiscall *Lua_pushnumber)(RluaState lst, double n);
 	Lua_pushnumber rlua_pushnumber = (Lua_pushnumber)unprotect(pushnumberaddress);
-	typedef int(__cdecl *Lua_getmetatable)(RluaState lst, int idx);
+	typedef int(__stdcall *Lua_getmetatable)(RluaState lst, int idx);
 	Lua_getmetatable rlua_getmetatable = (Lua_getmetatable)unprotect(getmetatableaddress);
 	typedef int(__cdecl *Lua_pcall)(RluaState lst, int nargs, int nresults, int errfunc);
 	Lua_pcall rlua_pcall = (Lua_pcall)unprotect(pcalladdress);
