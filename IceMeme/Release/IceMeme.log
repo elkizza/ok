@@ -1,0 +1,19 @@
+﻿  dllmain.cpp
+c:\users\ccuk\desktop\icesource-icememe\icememe\icememe\Meme.h(11): warning C4244: '=': conversion from 'lua_Number' to 'int', possible loss of data
+c:\users\ccuk\desktop\icesource-icememe\icememe\icememe\Meme.h(12): warning C4244: '=': conversion from 'lua_Number' to 'int', possible loss of data
+c:\users\ccuk\desktop\icesource-icememe\icememe\icememe\Meme.h(13): warning C4244: '=': conversion from 'lua_Number' to 'int', possible loss of data
+c:\users\ccuk\desktop\icesource-icememe\icememe\icememe\Meme.h(19): warning C4244: '=': conversion from 'lua_Number' to 'int', possible loss of data
+c:\users\ccuk\desktop\icesource-icememe\icememe\icememe\Meme.h(20): warning C4244: '=': conversion from 'lua_Number' to 'int', possible loss of data
+c:\users\ccuk\desktop\icesource-icememe\icememe\icememe\Meme.h(21): warning C4244: '=': conversion from 'lua_Number' to 'int', possible loss of data
+c:\users\ccuk\desktop\icesource-icememe\icememe\icememe\Meme.h(267): warning C4018: '<=': signed/unsigned mismatch
+c:\users\ccuk\desktop\icesource-icememe\icememe\icememe\Meme.h(417): warning C4018: '<=': signed/unsigned mismatch
+c:\users\ccuk\desktop\icesource-icememe\icememe\icememe\Meme.h(418): warning C4244: '=': conversion from 'lua_Number' to 'float', possible loss of data
+c:\users\ccuk\desktop\icesource-icememe\icememe\icememe\Meme.h(420): warning C4244: 'argument': conversion from 'float' to 'DWORD', possible loss of data
+LINK : warning LNK4098: defaultlib 'LIBCMT' conflicts with use of other libs; use /NODEFAULTLIB:library
+  Generating code
+c:\users\ccuk\desktop\icesource-icememe\icememe\icememe\pipes.h(36): warning C4715: 'CmdPipe': not all control paths return a value
+  45 of 302 functions (14.9%) were compiled, the rest were copied from previous compilation.
+    0 functions were new in current compilation
+    3 functions had inline decision re-evaluated but remain unchanged
+  Finished generating code
+  IceMeme.vcxproj -> C:\Users\CCUK\Desktop\IceSource-IceMeme\IceMeme\Release\IceMeme.dll
